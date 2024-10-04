@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 284947797}
   m_Layer: 0
   m_Name: Player Feet
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -521,7 +521,7 @@ GameObject:
   - component: {fileID: 711437411}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -557,7 +557,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1412,6 +1412,16 @@ MonoBehaviour:
   agent: {fileID: 0}
   minPlayerDistance: 3
   maxPlayerDistance: 6
+  visionRange: 15
+  visionBlockers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  eyes: {fileID: 1509263445}
+  playerTag: Player
+  idleWaitTime: 5
+  patrolRange: 5
+  minPatrolDestinationDistance: 1
+  combatCooldown: 1
 --- !u!1 &1180035882
 GameObject:
   m_ObjectHideFlags: 0
